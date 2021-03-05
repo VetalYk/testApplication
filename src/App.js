@@ -1,24 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { BrowserRouter as Router, Route, Redirect } from "react-router-dom";
+
+import "./App.css";
+import TabBar from "./components/TabBar/TabBar";
+import MovieDetails from "./pages/MoiveDetails/MovieDetails";
+import MoviesContainer from "./pages/Movies/MoviesContainer";
+import TodoContainer from "./pages/Todo/TodoContainer";
+import TodoDetails from "./pages/TodoDetails/TodoDetails";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className="App">
+        <div className="app-container">
+          <Route path="/">
+            <Redirect to="/movies" />
+          </Route>
+          <Route exact path="/movies" component={MoviesContainer} />
+          <Route exact path="/movies/:id" component={MovieDetails} />
+          <Route exact path="/todo" component={TodoContainer} />
+          <Route exact path="/todo/:id" component={TodoDetails} />
+        </div>
+        <TabBar />
+      </div>
+    </Router>
   );
 }
 

@@ -1,0 +1,32 @@
+.todo-table {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  border-spacing: 0;
+}
+
+.add-task-container {
+  display: flex;
+  flex-direction: column;
+  margin: 2em 10em;
+  align-items: center;
+}
+
+.add-task-title,
+.add-task-description {
+  width: 50%;
+  margin: 4px;
+  height: 25px;
+  border-radius: 8px;
+  border: 1px solid gray;
+  padding-left: 8px;
+  outline: none;
+}
+.add-task-btn {
+  padding: 8px 20px;
+  border-radius: 8px;
+  background-color: #0d6efd;
+  max-width: 150px;
+  margin-top: 15px;
+  color: white;
+}

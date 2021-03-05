@@ -1,0 +1,30 @@
+.tab-bar-container {
+  height: 50px;
+  width: 100%;
+  background-color: #bee5eb;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.tab {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex: 1;
+}
+a {
+  outline: none;
+  text-decoration: none;
+  font-family: Exo2;
+  font-size: 20px;
+}
+
+a,
+a:visited {
+  color: black;
+}
+
+.selected-tab {
+  border-bottom: 2px solid black;
+}

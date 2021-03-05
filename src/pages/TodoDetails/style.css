@@ -1,0 +1,45 @@
+.todo-details-container {
+  margin: 4em 15em;
+}
+
+.list-item {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+}
+
+.list-item-title {
+  font-family: Nunito-black;
+  font-size: 18px;
+}
+.list-item-value {
+  font-size: 16px;
+}
+
+.edit-btn,
+.delete-btn {
+  padding: 8px 30px;
+  border-radius: 8px;
+  background-color: #0d6efd;
+  max-width: 150px;
+  margin-top: 15px;
+  color: white;
+  cursor: pointer;
+}
+.delete-btn {
+  margin-left: 8px;
+}
+
+.btn-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+}
+
+.edit-input {
+  padding-left: 8px;
+  border-radius: 8px;
+  height: 25px;
+  border: 1px solid gray;
+  outline: none;
+}
